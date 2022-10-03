@@ -27,3 +27,24 @@ body.dark {
     background-color: var(--dark-bg-color);
     color: var(--dark-txt-color);
 }
+
+.container {
+    width: var(--desktop-body-width);
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+@import '_header';
