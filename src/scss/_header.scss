@@ -8,4 +8,25 @@
         height: 35px;
         vertical-align: middle;
     }
+    &__menu {
+        &-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        &-item {
+            font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+    }
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
