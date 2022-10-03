@@ -17,6 +17,7 @@
         margin-bottom: 10px;
         background-color: var(--primary-color);
         border-bottom: 5px solid var(--secondary-color);
+        border-radius: var(--s-bradius);
         &-header {
             font-family: 'Roboto Mono', monospace;
             font-weight: 600;
@@ -67,11 +68,8 @@
 }
 
 .calendar-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto Mono', monospace;
     letter-spacing: -0.5px;
+    cursor: default;
     &-item {
         margin: 3px 0;
         display: flex;
@@ -86,4 +84,20 @@
     &-time {
         font-weight: 600;
     }
+}
+
+.socials-list {
+    font-weight: 600;
+    transition: all 0.5s;
+    a:hover {
+        color: var(--hover-color);
+    }
+}
+
+.socials-list,
+.calendar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
 }
