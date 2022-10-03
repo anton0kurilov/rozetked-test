@@ -1,0 +1,62 @@
+.body {
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.main {
+    width: 70%;
+}
+
+.aside {
+    width: 30%;
+    &__card {
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: var(--primary-color);
+        border-bottom: 5px solid var(--secondary-color);
+        &-header {
+            font-family: 'Roboto Mono', monospace;
+            font-weight: 600;
+        }
+    }
+    &__search {
+        font-family: 'Roboto Mono', monospace;
+        &-input {
+            background-color: transparent;
+            border: 0;
+            padding: 5px 0;
+            width: 100%;
+            font-weight: 600;
+            border-bottom: 2px solid var(--txt-color);
+            &::placeholder {
+                color: var(--txt-color);
+                font-family: 'Roboto Mono', monospace;
+                font-weight: 600;
+            }
+            &:focus {
+                outline: none;
+                border-color: var(--hover-color);
+                color: var(--hover-color);
+                &::placeholder {
+                    color: var(--hover-color);
+                }
+            }
+        }
+        &-button {
+            border: 0;
+            background: transparent;
+            position: absolute;
+            margin: 2px 0px 0 -30px;
+            font-family: 'Roboto Mono', monospace;
+            font-weight: 600;
+            transition: all 0.5s;
+            &:hover {
+                color: var(--hover-color);
+                cursor: pointer;
+            }
+        }
+    }
+}

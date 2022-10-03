@@ -4,6 +4,7 @@
     line-height: 65px;
     background-color: var(--primary-color);
     border-bottom: 5px solid var(--secondary-color);
+    box-sizing: content-box;
     &__logo img {
         height: 35px;
         vertical-align: middle;
@@ -23,7 +24,7 @@
             font-size: 1.1em;
             transition: all 0.5s;
             &:hover {
-                color: #555;
+                color: var(--hover-color);
             }
         }
     }
