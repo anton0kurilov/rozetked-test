@@ -49,13 +49,16 @@
             border: 0;
             background: transparent;
             position: absolute;
-            margin: 2px 0px 0 -30px;
+            margin: 2px 0px 0 -25px;
             font-family: 'Roboto Mono', monospace;
             font-weight: 600;
             transition: all 0.5s;
             &:hover {
                 color: var(--hover-color);
                 cursor: pointer;
+            }
+            & span {
+                font-size: 20px;
             }
         }
     }
