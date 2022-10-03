@@ -22,3 +22,8 @@ body {
     font-size: 14px;
     color: var(--txt-color);
 }
+
+body.dark {
+    background-color: var(--dark-bg-color);
+    color: var(--dark-txt-color);
+}
