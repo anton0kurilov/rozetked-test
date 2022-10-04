@@ -1,0 +1,37 @@
+.footer {
+    width: 100%;
+    padding: 30px 0;
+    background-color: var(--dark-bg-color);
+    border-bottom: 5px solid var(--dark-card-bg-color);
+    &__logo img {
+        height: 35px;
+        vertical-align: middle;
+        filter: invert(100);
+    }
+    &__menu {
+        &-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        &-item {
+            font-family: 'Roboto Mono', monospace;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.5s;
+            color: var(--dark-txt-color);
+            &:hover {
+                color: #d1d1d1;
+            }
+        }
+    }
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
