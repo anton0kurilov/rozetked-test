@@ -73,6 +73,7 @@
     animation-fill-mode: forwards;
     animation-duration: 0.5s;
     animation-delay: var(--load-delay);
+    transition: right 1s;
     &__card {
         padding: 10px;
         margin-bottom: 10px;

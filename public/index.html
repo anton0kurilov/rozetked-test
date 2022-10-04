@@ -6,7 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Rozetked</title>
         <link rel="preload" href="../src/scss/main.scss" />
-        <link rel="stylesheet" href="../src/scss/main.scss" />
+        <link rel="stylesheet" href="../src/scss/main.scss" media="all" />
+        <link
+            rel="stylesheet"
+            href="../src/scss/mobile.scss"
+            media="screen and (max-width: 1300px)"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -43,6 +48,12 @@
                         <a href="#">
                             <li class="header__menu-item">Обзоры</li>
                         </a>
+                        <li
+                            class="header__menu-item material-symbols-outlined header-hamburger"
+                            onclick="showAside()"
+                        >
+                            menu
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -224,6 +235,8 @@
                 light_mode
             </div>
         </section>
+        <div id="overlay" onclick="hideAside()"></div>
     </body>
     <script src="../src/scripts/_darkmode.js"></script>
+    <script src="../src/scripts/_aside.js"></script>
 </html>

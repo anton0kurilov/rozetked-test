@@ -33,6 +33,10 @@
             }
         }
     }
+    &-hamburger {
+        cursor: pointer;
+        display: none !important;
+    }
 }
 
 .header .container {
