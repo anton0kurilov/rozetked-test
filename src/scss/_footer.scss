@@ -29,7 +29,7 @@
             transition: all 0.5s;
             color: var(--dark-txt-color);
             &:hover {
-                color: #d1d1d1;
+                color: var(--dark-hover-color);
             }
         }
     }
