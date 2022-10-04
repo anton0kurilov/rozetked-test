@@ -4,15 +4,239 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta content="true" name="HandheldFriendly" />
+        <meta content="width" name="MobileOptimized" />
         <title>Rozetked</title>
         <link rel="preload" href="../src/scss/main.scss" />
-        <link rel="stylesheet" href="../src/scss/main.scss" />
+        <link rel="stylesheet" href="../src/scss/main.scss" media="all" />
+        <link
+            rel="stylesheet"
+            href="../src/scss/mobile.scss"
+            media="screen and (max-width: 1300px)"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
             rel="stylesheet"
         />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+            rel="stylesheet"
+        />
     </head>
-    <body></body>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__logo">
+                    <a href="#"
+                        ><img
+                            src="https://rozetked.me/images/logo.png"
+                            alt="Rozetked's Logo"
+                            draggable="false"
+                    /></a>
+                </div>
+                <div class="header__menu">
+                    <ul class="header__menu-list">
+                        <a href="#">
+                            <li class="header__menu-item">Новости</li>
+                        </a>
+                        <a href="#">
+                            <li class="header__menu-item">Статьи</li>
+                        </a>
+                        <a href="#">
+                            <li class="header__menu-item">Инструкции</li>
+                        </a>
+                        <a href="#">
+                            <li class="header__menu-item">Обзоры</li>
+                        </a>
+                        <li
+                            class="header__menu-item material-symbols-outlined header-hamburger"
+                            onclick="showAside()"
+                        >
+                            menu
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="body container">
+            <main class="main">
+                <div class="main__ticker">
+                    <ul class="main__ticker-list">
+                        <a href="#">
+                            <li class="main__ticker-item">
+                                Обзор realme Pad Mini — бюджетный малый
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="main__ticker-item">
+                                Обзор Apple Watch Series 8 и SE 2-го поколения.
+                                Снова минорно
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="main__ticker-item">
+                                Моющий робот-пылесос 360 Botslab S8 Plus. Всё
+                                дело в самоочистке
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <a href="#">
+                    <article class="main__article">
+                        <img
+                            src="https://rozetked.me/images/uploads/webp/QxPnyn4Ki7eD.webp?1664805176"
+                            class="main__article-img"
+                        />
+                        <h2 class="main__article-title">
+                            AnTuTu опубликовал новый рейтинг самых
+                            производительных устройств на iOS и iPadOS
+                        </h2>
+                    </article>
+                </a>
+                <article class="main__article">
+                    <a href="#">
+                        <img
+                            src="https://rozetked.me/images/uploads/webp/ewR6IyT1j6oN.webp?1664801794"
+                            class="main__article-img"
+                        />
+                        <h2 class="main__article-title">
+                            Snapdragon 8 Gen 2 представят в ноябре — чип будет
+                            набирать более 1,2 миллиона баллов в AnTuTu
+                        </h2>
+                    </a>
+                </article>
+                <article class="main__article">
+                    <a href="#">
+                        <img
+                            src="https://rozetked.me/images/uploads/webp/JM3DjIPfnqfc.webp?1664799654"
+                            class="main__article-img"
+                        />
+                        <h2 class="main__article-title">
+                            Nvidia закроет свой офис в России до конца октября
+                        </h2>
+                    </a>
+                </article>
+            </main>
+            <aside class="aside">
+                <section class="aside__card">
+                    <form action="" method="post">
+                        <input
+                            type="text"
+                            name="search"
+                            placeholder="Поиск..."
+                            class="aside__search-input"
+                        />
+                        <button type="submit" class="aside__search-button">
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+                        </button>
+                    </form>
+                </section>
+                <section class="aside__card">
+                    <h3 class="aside__card-header">Ближайшие события</h3>
+                    <ul class="calendar-list">
+                        <li class="calendar-list-item">
+                            <span class="calendar-list-title">
+                                Европейская презентация Xiaomi
+                            </span>
+                            <span class="calendar-list-time">04.10.22</span>
+                        </li>
+                        <li class="calendar-list-item">
+                            <span class="calendar-list-title">
+                                Презентация Google Pixel 7
+                            </span>
+                            <span class="calendar-list-time">06.10.22</span>
+                        </li>
+                        <li class="calendar-list-item">
+                            <span class="calendar-list-title">
+                                Meta Connect
+                            </span>
+                            <span class="calendar-list-time">11.10.22</span>
+                        </li>
+                        <li class="calendar-list-item">
+                            <span class="calendar-list-title">
+                                Презентация в России realme GT Neo 3T и 9 5G
+                            </span>
+                            <span class="calendar-list-time">11.10.22</span>
+                        </li>
+                        <li class="calendar-list-item">
+                            <span class="calendar-list-title">
+                                Samsung Developer Conference 2022
+                            </span>
+                            <span class="calendar-list-time">12.10.22</span>
+                        </li>
+                        <li class="calendar-list-item">
+                            <span class="calendar-list-title">
+                                Microsoft Fall 2022 Event
+                            </span>
+                            <span class="calendar-list-time">12.10.22</span>
+                        </li>
+                    </ul>
+                </section>
+                <section class="aside__card">
+                    <h3 class="aside__card-header">Мы в социальных сетях</h3>
+                    <ul class="socials-list">
+                        <li class="socials-list-item">
+                            ВКонтакте: <a href="">vk.com/rozetked</a>
+                        </li>
+                        <li class="socials-list-item">
+                            Twitter: <a href="">twitter.com/rozetked</a>
+                        </li>
+                        <li class="socials-list-item">
+                            Telegram: <a href="">t.me/rozetked</a>
+                        </li>
+                        <li class="socials-list-item">
+                            YouTube: <a href="">youtube.com/rozetked</a>
+                        </li>
+                        <li class="socials-list-item">
+                            Дзен: <a href="">dzen.ru/rozetked</a>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__logo">
+                    <a href="#">
+                        <img
+                            src="https://rozetked.me/images/logo.png"
+                            alt="Rozetked's Logo"
+                            draggable="false"
+                        />
+                    </a>
+                </div>
+                <div class="footer__menu">
+                    <ul class="footer__menu-list">
+                        <a href="#">
+                            <li class="footer__menu-item">О нас</li>
+                        </a>
+                        <a href="#">
+                            <li class="footer__menu-item">Контакты</li>
+                        </a>
+                        <a href="#">
+                            <li class="footer__menu-item">Реклама</li>
+                        </a>
+                        <a href="#">
+                            <li class="footer__menu-item">Нашли ошибку?</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <section class="admin">
+            <div
+                class="material-symbols-outlined admin-selector"
+                onclick="darkMode()"
+            >
+                light_mode
+            </div>
+        </section>
+        <div id="overlay" onclick="hideAside()"></div>
+    </body>
+    <script src="../src/scripts/_darkmode.js"></script>
+    <script src="../src/scripts/_aside.js"></script>
 </html>
