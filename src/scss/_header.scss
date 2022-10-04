@@ -9,7 +9,7 @@
     animation: enter-down ease-in 1;
     animation-fill-mode: forwards;
     animation-duration: 0.5s;
-    animation-delay: 0.5s;
+    animation-delay: var(--load-delay);
     &__logo img {
         height: 35px;
         vertical-align: middle;

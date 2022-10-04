@@ -12,7 +12,7 @@
     animation: enter-left ease-in 1;
     animation-fill-mode: forwards;
     animation-duration: 0.5s;
-    animation-delay: 0.8s;
+    animation-delay: var(--load-delay);
     &__article {
         margin-bottom: 8px;
         border-radius: var(--s-bradius);
@@ -72,7 +72,7 @@
     animation: enter-right ease-in 1;
     animation-fill-mode: forwards;
     animation-duration: 0.5s;
-    animation-delay: 0.8s;
+    animation-delay: var(--load-delay);
     &__card {
         padding: 10px;
         margin-bottom: 10px;
@@ -178,7 +178,7 @@
     animation: enter-right ease-in 1;
     animation-fill-mode: forwards;
     animation-duration: 0.5s;
-    animation-delay: 0.8s;
+    animation-delay: var(--load-delay);
     &-selector {
         transition: all 0.5s;
         padding: 5px;
