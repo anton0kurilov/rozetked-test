@@ -8,6 +8,11 @@
 
 .main {
     width: 70%;
+    opacity: 0;
+    animation: enter-left ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-delay: 0.8s;
     &__article {
         margin-bottom: 8px;
         border-radius: var(--s-bradius);
@@ -63,6 +68,11 @@
 
 .aside {
     width: 30%;
+    opacity: 0;
+    animation: enter-right ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-delay: 0.8s;
     &__card {
         padding: 10px;
         margin-bottom: 10px;

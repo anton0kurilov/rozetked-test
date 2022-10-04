@@ -5,6 +5,11 @@
     background-color: var(--primary-color);
     border-bottom: 5px solid var(--secondary-color);
     box-sizing: content-box;
+    opacity: 0;
+    animation: enter-down ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
     &__logo img {
         height: 35px;
         vertical-align: middle;

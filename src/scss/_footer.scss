@@ -3,6 +3,11 @@
     padding: 30px 0;
     background-color: var(--dark-bg-color);
     border-bottom: 5px solid var(--dark-card-bg-color);
+    opacity: 0;
+    animation: enter-up ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-delay: 1.2s;
     &__logo img {
         height: 35px;
         vertical-align: middle;
