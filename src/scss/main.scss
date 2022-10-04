@@ -28,6 +28,7 @@ body {
         Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     color: var(--txt-color);
+    overscroll-behavior: none;
 }
 
 body.dark {
