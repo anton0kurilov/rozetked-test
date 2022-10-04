@@ -15,8 +15,10 @@
     --mobile-body-width: 85%;
 }
 
-* {
+*,
+*:focus {
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
