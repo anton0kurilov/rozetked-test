@@ -7,7 +7,7 @@
 }
 
 .main {
-    width: 70%;
+    width: calc(70% - 20px);
     opacity: 0;
     animation: enter-left ease-in 1;
     animation-fill-mode: forwards;
