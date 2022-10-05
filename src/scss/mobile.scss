@@ -55,14 +55,17 @@
 }
 
 @media screen and (max-width: 650px) {
+    .container {
+        width: var(--phone-body-width);
+    }
     .header {
         &__menu {
             position: absolute;
             top: 65px;
-            left: 7.5%;
             width: var(--mobile-body-width);
             &-list {
-                justify-content: space-between;
+                justify-content: center;
+                gap: 15px;
             }
         }
         .container {
