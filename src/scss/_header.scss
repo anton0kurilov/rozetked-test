@@ -1,9 +1,11 @@
 .header {
-    width: 100%;
+    width: calc(var(--desktop-body-width) + 100px);
     height: 65px;
     line-height: 65px;
+    margin: 10px auto 0 auto;
     background-color: var(--primary-color);
     border-bottom: 5px solid var(--secondary-color);
+    border-radius: var(--s-bradius);
     box-sizing: content-box;
     opacity: 0;
     animation: enter-down ease-in 1;

@@ -3,6 +3,7 @@
 }
 
 .header {
+    width: calc(100% - 20px);
     &-hamburger {
         display: inline-block !important;
     }
