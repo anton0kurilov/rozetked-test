@@ -180,6 +180,7 @@
     animation-fill-mode: forwards;
     animation-duration: 0.5s;
     animation-delay: var(--load-delay);
+    z-index: 998;
     &-selector {
         transition: all 0.5s;
         padding: 5px;
