@@ -40,6 +40,16 @@ body.dark {
     background-color: var(--dark-bg-color);
 }
 
+body.red {
+    --primary-color: #ff6565;
+    --secondary-color: #ff3232;
+}
+
+body.green {
+    --primary-color: #7dda9a;
+    --secondary-color: #55cf7b;
+}
+
 .container {
     width: var(--desktop-body-width);
     margin: 0 auto;

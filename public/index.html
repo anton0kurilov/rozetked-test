@@ -230,13 +230,24 @@
         <section class="admin">
             <div
                 class="material-symbols-outlined admin-selector"
+                onclick="palette()"
+            >
+                palette
+            </div>
+            <div
+                class="material-symbols-outlined admin-selector"
                 onclick="darkMode()"
             >
                 light_mode
             </div>
         </section>
+        <div class="admin__palette">
+            <div class="admin__palette-yellow"></div>
+            <div class="admin__palette-red"></div>
+            <div class="admin__palette-green"></div>
+        </div>
         <div id="overlay" onclick="hideAside()"></div>
     </body>
-    <script src="../src/scripts/_darkmode.js"></script>
+    <script src="../src/scripts/_admin.js"></script>
     <script src="../src/scripts/_aside.js"></script>
 </html>
