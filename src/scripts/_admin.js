@@ -1,7 +1,11 @@
 const darkModeStatus = localStorage.getItem('darkMode');
+const paletteStatus = localStorage.getItem('palette');
 const body = document.body;
 if (darkModeStatus == 'true') {
     body.classList.add('dark');
+}
+if (paletteStatus) {
+    body.classList.add(paletteStatus);
 }
 
 const switchMode = document.querySelector('#switchMode');
@@ -33,16 +37,19 @@ yellowPalette.addEventListener('click', function() {
     body.classList.add('yellow');
     body.classList.remove('red');
     body.classList.remove('green');
+    localStorage.setItem('palette', 'yellow');
 })
 
 redPalette.addEventListener('click', function() {
     body.classList.add('red');
     body.classList.remove('yellow');
     body.classList.remove('green');
+    localStorage.setItem('palette', 'red');
 })
 
 greenPalette.addEventListener('click', function() {
     body.classList.add('green');
     body.classList.remove('red');
     body.classList.remove('yellow');
+    localStorage.setItem('palette', 'green');
 })
