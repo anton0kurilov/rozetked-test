@@ -52,7 +52,7 @@
                         </a>
                         <li
                             class="header__menu-item material-symbols-outlined header-hamburger"
-                            onclick="showAside()"
+                            id="showAside"
                         >
                             menu
                         </li>
@@ -230,13 +230,13 @@
         <section class="admin">
             <div
                 class="material-symbols-outlined admin-selector"
-                onclick="palette()"
+                id="showPalette"
             >
                 palette
             </div>
             <div
                 class="material-symbols-outlined admin-selector"
-                onclick="darkMode()"
+                id="switchMode"
             >
                 light_mode
             </div>
@@ -246,7 +246,7 @@
             <div class="admin__palette-red"></div>
             <div class="admin__palette-green"></div>
         </div>
-        <div id="overlay" onclick="hideAside()"></div>
+        <div class="overlay" id="hideAside"></div>
     </body>
     <script src="../src/scripts/_admin.js"></script>
     <script src="../src/scripts/_aside.js"></script>
