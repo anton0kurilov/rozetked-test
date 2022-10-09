@@ -4,11 +4,16 @@
     "dev": "parcel public/index.html public/article/index.html",
     "build": "rm -rf dist/* && parcel build public/index.html public/article/index.html"
   },
-  "source": ["public/index.html", "public/article/index.html"],
+  "source": [
+    "public/index.html",
+    "public/article/index.html"
+  ],
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {
-    "parcel": "^2.7.0",
     "@parcel/transformer-sass": "^2.3.2",
+    "parcel": "^2.7.0",
+    "posthtml": "^0.16.6",
+    "posthtml-include": "^1.7.4",
     "sass": "^1.49.8"
   }
 }
