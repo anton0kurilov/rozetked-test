@@ -102,8 +102,8 @@
             &-yellow,
             &-red,
             &-green {
-                width: 30px !important;
-                height: 30px !important;
+                width: 30px;
+                height: 30px;
             }
         }
     }
@@ -118,6 +118,10 @@
         &-img {
             width: calc(100% + 20px);
             margin: -10px -10px 0 -10px;
+        }
+        &-text img {
+            width: calc(100% + 20px);
+            margin: 10px -10px;
         }
         &__info {
             font-size: 12px;

@@ -33,6 +33,10 @@
                 color: var(--primary-color);
             }
         }
+        img {
+            width: calc(100% + 60px);
+            margin: 10px -30px;
+        }
     }
     &__info {
         margin: 10px 0;
