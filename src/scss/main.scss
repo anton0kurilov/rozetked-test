@@ -8,6 +8,8 @@
     --dark-card-bg-color: #0c0c0c;
     --dark-txt-color: #f7f7f7;
     --hover-color: #555;
+    --link-color: #0060a0;
+    --dark-link-color: #98b8c8;
     --dark-hover-color: #d1d1d1;
     --m-bradius: 8px;
     --s-bradius: 4px;
@@ -43,6 +45,11 @@ body.dark {
             background-color: var(--dark-card-bg-color);
             border-color: #000;
             color: var(--dark-txt-color);
+        }
+        &-text {
+            a {
+                color: var(--dark-link-color);
+            }
         }
         &__info {
             &-tags {

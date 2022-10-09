@@ -20,17 +20,16 @@
         color: var(--dark-txt-color);
     }
     &-text {
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 18px;
+        line-height: 25px;
         text-align: justify;
         p {
             padding: 10px 0;
         }
         a {
-            color: var(--secondary-color);
-            transition: color 0.5s;
+            color: var(--link-color);
             &:hover {
-                color: var(--primary-color);
+                text-decoration: underline;
             }
         }
         img {
