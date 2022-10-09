@@ -44,6 +44,13 @@ body.dark {
             border-color: #000;
             color: var(--dark-txt-color);
         }
+        &__info {
+            &-tags {
+                &-item {
+                    background-color: var(--dark-bg-color);
+                }
+            }
+        }
     }
 }
 

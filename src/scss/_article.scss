@@ -1,6 +1,6 @@
 .article {
     &__body {
-        padding: 30px;
+        padding: 10px 30px;
         margin: 0 0 10px 0;
         background-color: var(--card-bg-color);
         border-bottom: 5px solid var(--dark-hover-color);
@@ -13,6 +13,7 @@
     &-text {
         font-size: 16px;
         line-height: 22px;
+        text-align: justify;
         p {
             padding: 10px 0;
         }
@@ -22,6 +23,38 @@
             &:hover {
                 color: var(--primary-color);
             }
+        }
+    }
+    &__info {
+        margin: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        &-numbers {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+        }
+        &-tags {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            &-item {
+                background-color: var(--dark-hover-color);
+                padding: 5px 8px;
+                border-radius: var(--s-bradius);
+                transition: all 0.5;
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+        &-icon {
+            font-size: 14px !important;
+            vertical-align: middle;
+            margin: 0 3px 2px 0;
         }
     }
 }
