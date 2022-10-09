@@ -107,4 +107,20 @@
             }
         }
     }
+    .article {
+        &__body {
+            padding: 10px;
+        }
+        &-title {
+            font-size: 1.5em;
+            bottom: 20px;
+        }
+        &-img {
+            width: calc(100% + 20px);
+            margin: -10px -10px 0 -10px;
+        }
+        &__info {
+            font-size: 12px;
+        }
+    }
 }

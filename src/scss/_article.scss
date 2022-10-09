@@ -6,9 +6,18 @@
         border-bottom: 5px solid var(--dark-hover-color);
         border-radius: var(--s-bradius);
     }
+    &-img {
+        width: calc(100% + 60px);
+        height: auto;
+        margin: -10px -30px 0 -30px;
+        border-radius: var(--s-bradius) var(--s-bradius) 0 0;
+        filter: brightness(0.6);
+    }
     &-title {
-        margin: 0 0 10px 0;
+        bottom: 30px;
         font-size: 2em;
+        position: absolute;
+        color: var(--dark-txt-color);
     }
     &-text {
         font-size: 16px;
