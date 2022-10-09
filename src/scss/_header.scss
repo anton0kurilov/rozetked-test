@@ -1,17 +1,17 @@
 .header {
-    width: calc(var(--desktop-body-width) + 100px);
+    width: calc(var(--desktopBodyWidth) + 100px);
     height: 65px;
     line-height: 65px;
     margin: 10px auto 0 auto;
-    background-color: var(--primary-color);
-    border-bottom: 5px solid var(--secondary-color);
-    border-radius: var(--s-bradius);
+    background-color: var(--primaryColor);
+    border-bottom: 5px solid var(--secondaryColor);
+    border-radius: var(--smallBorderRadius);
     box-sizing: content-box;
     opacity: 0;
     animation: enter-down ease-in 1;
     animation-fill-mode: forwards;
     animation-duration: 0.5s;
-    animation-delay: var(--load-delay);
+    animation-delay: var(--loadingDelay);
     &__logo img {
         height: 35px;
         vertical-align: middle;
@@ -31,7 +31,7 @@
             font-size: 1.1em;
             transition: all 0.5s;
             &:hover {
-                color: var(--hover-color);
+                color: var(--hoverColor);
             }
         }
     }

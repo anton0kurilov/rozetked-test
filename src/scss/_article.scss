@@ -2,22 +2,22 @@
     &__body {
         padding: 10px 30px;
         margin: 0 0 10px 0;
-        background-color: var(--card-bg-color);
-        border-bottom: 5px solid var(--dark-hover-color);
-        border-radius: var(--s-bradius);
+        background-color: var(--cardBgColor);
+        border-bottom: 5px solid var(--darkHoverColor);
+        border-radius: var(--smallBorderRadius);
     }
     &-img {
         width: calc(100% + 60px);
         height: auto;
         margin: -10px -30px 0 -30px;
-        border-radius: var(--s-bradius) var(--s-bradius) 0 0;
+        border-radius: var(--smallBorderRadius) var(--smallBorderRadius) 0 0;
         filter: brightness(0.6);
     }
     &-title {
         bottom: 30px;
         font-size: 2em;
         position: absolute;
-        color: var(--dark-txt-color);
+        color: var(--darkTextColor);
     }
     &-text {
         font-size: 18px;
@@ -27,7 +27,7 @@
             padding: 10px 0;
         }
         a {
-            color: var(--link-color);
+            color: var(--linkColor);
             &:hover {
                 text-decoration: underline;
             }
@@ -54,9 +54,9 @@
             align-items: center;
             gap: 10px;
             &-item {
-                background-color: var(--dark-hover-color);
+                background-color: var(--darkHoverColor);
                 padding: 5px 8px;
-                border-radius: var(--s-bradius);
+                border-radius: var(--smallBorderRadius);
                 transition: all 0.5;
                 &:hover {
                     opacity: 0.9;

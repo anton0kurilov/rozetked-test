@@ -1,9 +1,9 @@
 .container {
-    width: var(--mobile-body-width);
+    width: var(--mobileBodyWidth);
 }
 
 .header {
-    width: var(--phone-body-width);
+    width: var(--phoneBodyWidth);
     &-hamburger {
         display: inline-block !important;
     }
@@ -20,7 +20,7 @@
 
 .aside {
     position: fixed;
-    background-color: var(--dark-card-bg-color);
+    background-color: var(--darkCardBgColor);
     width: 320px;
     height: 100%;
     right: -320px;
@@ -47,7 +47,7 @@
     top: 0;
     left: 0;
     position: fixed;
-    background-color: var(--dark-card-bg-color);
+    background-color: var(--darkCardBgColor);
     opacity: 0.6;
     z-index: 998;
     display: none;
@@ -56,7 +56,7 @@
 
 @media screen and (max-width: 650px) {
     .container {
-        width: var(--phone-body-width);
+        width: var(--phoneBodyWidth);
     }
     .header {
         opacity: 1;
@@ -64,14 +64,14 @@
         &__menu {
             position: fixed;
             bottom: 0;
-            background-color: var(--primary-color);
+            background-color: var(--primaryColor);
             width: 100%;
             z-index: 997;
             opacity: 0;
             animation: enter-up ease-in 1;
             animation-fill-mode: forwards;
             animation-duration: 0.5s;
-            animation-delay: var(--load-delay);
+            animation-delay: var(--loadingDelay);
             &-list {
                 justify-content: center;
                 gap: 15px;
