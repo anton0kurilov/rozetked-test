@@ -121,6 +121,9 @@
         }
         &__info {
             font-size: 12px;
+            &-tags {
+                gap: 8px;
+            }
         }
     }
 }
