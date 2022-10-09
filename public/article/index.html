@@ -6,12 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta content="true" name="HandheldFriendly" />
         <meta content="width" name="MobileOptimized" />
-        <title>Rozetked</title>
-        <link rel="preload" href="../src/scss/main.scss" />
-        <link rel="stylesheet" href="../src/scss/main.scss" media="all" />
+        <title>Rozetked's Article</title>
+        <link rel="preload" href="/src/scss/main.scss" />
+        <link rel="stylesheet" href="/src/scss/main.scss" media="all" />
+        <link rel="stylesheet" href="/src/scss/_article.scss" media="all" />
         <link
             rel="stylesheet"
-            href="../src/scss/mobile.scss"
+            href="/src/scss/mobile.scss"
             media="screen and (max-width: 1300px)"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -62,61 +63,68 @@
         </header>
         <div class="body container">
             <main class="main">
-                <div class="main__ticker">
-                    <ul class="main__ticker-list">
-                        <a href="#">
-                            <li class="main__ticker-item">
-                                Обзор realme Pad Mini — бюджетный малый
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li class="main__ticker-item">
-                                Обзор Apple Watch Series 8 и SE 2-го поколения.
-                                Снова минорно
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li class="main__ticker-item">
-                                Моющий робот-пылесос 360 Botslab S8 Plus. Всё
-                                дело в самоочистке
-                            </li>
-                        </a>
-                    </ul>
-                </div>
-                <a href="./article">
-                    <article class="main__article">
-                        <img
-                            src="https://rozetked.me/images/uploads/webp/QxPnyn4Ki7eD.webp?1664805176"
-                            class="main__article-img"
-                        />
-                        <h2 class="main__article-title">
-                            AnTuTu опубликовал новый рейтинг самых
-                            производительных устройств на iOS и iPadOS
-                        </h2>
-                    </article>
-                </a>
-                <article class="main__article">
-                    <a href="#">
-                        <img
-                            src="https://rozetked.me/images/uploads/webp/ewR6IyT1j6oN.webp?1664801794"
-                            class="main__article-img"
-                        />
-                        <h2 class="main__article-title">
-                            Snapdragon 8 Gen 2 представят в ноябре — чип будет
-                            набирать более 1,2 миллиона баллов в AnTuTu
-                        </h2>
-                    </a>
-                </article>
-                <article class="main__article">
-                    <a href="#">
-                        <img
-                            src="https://rozetked.me/images/uploads/webp/JM3DjIPfnqfc.webp?1664799654"
-                            class="main__article-img"
-                        />
-                        <h2 class="main__article-title">
-                            Nvidia закроет свой офис в России до конца октября
-                        </h2>
-                    </a>
+                <article class="article__body">
+                    <h1 class="article-title">
+                        AnTuTu опубликовал новый рейтинг самых производительных
+                        устройств на iOS и iPadOS
+                    </h1>
+                    <div class="article-text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Fusce congue, ligula vitae mollis tempus,
+                            turpis quam vestibulum ipsum, id elementum urna nisl
+                            vitae felis. Maecenas sit amet ligula vitae quam
+                            feugiat ullamcorper. Nam efficitur semper odio, eu
+                            sagittis ante.
+                            <a href="#">Pellentesque mattis</a> nunc id diam
+                            lacinia, et efficitur est luctus. Quisque ut ex sit
+                            amet urna lacinia ultricies a non metus. Praesent
+                            vel sodales ex, a semper justo. Fusce blandit ligula
+                            sed lectus dictum rhoncus. Aenean sed suscipit
+                            justo. Curabitur elit nibh, pulvinar vel viverra id,
+                            facilisis ut odio. Nullam non lorem facilisis,
+                            consectetur odio ac, pulvinar ligula. Integer eu
+                            lorem vitae nulla dapibus pellentesque quis ac
+                            purus. Vestibulum quis tincidunt dolor.
+                        </p>
+                        <p>
+                            Phasellus rhoncus neque eget ultrices sagittis. Duis
+                            fermentum, odio eu dignissim posuere, diam lectus
+                            pulvinar lectus, id tempus est quam quis metus. Nam
+                            et lectus laoreet, venenatis ex sit amet, facilisis
+                            nisi. Fusce vel eros sit amet sem scelerisque
+                            suscipit. Ut iaculis nisi sed urna finibus sodales.
+                            Donec sollicitudin quam cursus mauris vulputate
+                            pharetra. Suspendisse potenti. Cras eu condimentum
+                            tellus. Proin rutrum dui dolor, nec auctor nisi
+                            suscipit ut.
+                        </p>
+                        <p>
+                            Cras eleifend ante id vehicula auctor. Phasellus
+                            commodo magna nulla, a venenatis odio sodales id.
+                            Praesent interdum nisl id blandit eleifend.
+                            Pellentesque eu libero at metus accumsan facilisis.
+                            Ut vel facilisis elit. Phasellus id pellentesque
+                            augue, id volutpat est. Maecenas facilisis efficitur
+                            ex quis lobortis.
+                        </p>
+                        <p>
+                            Donec at ornare nunc. Quisque interdum vestibulum
+                            sem, id placerat est sagittis ut. Curabitur
+                            ullamcorper velit sit amet laoreet bibendum. Nam
+                            blandit efficitur neque sit amet facilisis. Interdum
+                            et malesuada fames ac ante ipsum primis in faucibus.
+                            Curabitur auctor sit amet velit at tristique.
+                            Aliquam ornare nibh vel mattis condimentum. Fusce
+                            mattis turpis et nisi mattis, vel posuere neque
+                            interdum. Morbi molestie, neque vitae semper
+                            pellentesque, ligula est dignissim urna, id placerat
+                            ligula ipsum id erat. Proin non lectus nisi. Morbi
+                            gravida sodales rhoncus. Curabitur id justo risus.
+                            Vivamus felis libero, imperdiet eget consequat in,
+                            mollis non arcu.
+                        </p>
+                    </div>
                 </article>
             </main>
             <aside class="aside">
@@ -248,6 +256,6 @@
         </div>
         <div class="overlay" id="hideAside"></div>
     </body>
-    <script src="../src/scripts/_admin.js"></script>
-    <script src="../src/scripts/_aside.js"></script>
+    <script src="/src/scripts/_admin.js"></script>
+    <script src="/src/scripts/_aside.js"></script>
 </html>

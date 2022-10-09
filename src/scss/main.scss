@@ -5,7 +5,7 @@
     --card-bg-color: #e1e1e1;
     --txt-color: #1a1a1a;
     --dark-bg-color: #1a1a1a;
-    --dark-card-bg-color: #010101;
+    --dark-card-bg-color: #0c0c0c;
     --dark-txt-color: #f7f7f7;
     --hover-color: #555;
     --dark-hover-color: #d1d1d1;
@@ -38,6 +38,13 @@ body {
 
 body.dark {
     background-color: var(--dark-bg-color);
+    .article {
+        &__body {
+            background-color: var(--dark-card-bg-color);
+            border-color: #000;
+            color: var(--dark-txt-color);
+        }
+    }
 }
 
 body.red {

@@ -1,10 +1,10 @@
 {
   "scripts": {
-    "start": "parcel public/index.html",
-    "dev": "parcel public/index.html",
-    "build": "rm -rf dist/* && parcel build public/index.html"
+    "start": "parcel public/index.html public/article/index.html",
+    "dev": "parcel public/index.html public/article/index.html",
+    "build": "rm -rf dist/* && parcel build public/index.html public/article/index.html"
   },
-  "source": "public/index.html",
+  "source": ["public/index.html", "public/article/index.html"],
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {
     "parcel": "^2.7.0",
