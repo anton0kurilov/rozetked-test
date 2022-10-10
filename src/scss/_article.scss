@@ -44,12 +44,14 @@
         border-bottom: 4px solid var(--darkHoverColor);
         display: flex;
         justify-content: space-between;
+        font-family: 'Roboto Mono', monospace;
         &-numbers {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 10px;
             font-weight: 600;
+            cursor: default;
         }
         &-tags {
             display: flex;
@@ -58,11 +60,12 @@
             gap: 10px;
             &-item {
                 background-color: var(--darkHoverColor);
-                padding: 5px 8px;
+                padding: 8px 12px;
                 border-radius: var(--smallBorderRadius);
-                transition: all 0.5;
+                text-transform: uppercase;
+                transition: all 0.5s;
                 &:hover {
-                    opacity: 0.9;
+                    background-color: var(--primaryColor);
                 }
             }
         }

@@ -53,6 +53,7 @@ greenPalette.addEventListener('click', function () {
     body.classList.remove('yellow')
     localStorage.setItem('palette', 'green')
 })
+
 if (window.innerWidth >= 650) {
     const scrollUp = document.querySelector('#scrollUp')
     window.onscroll = function () {
