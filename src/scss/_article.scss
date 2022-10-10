@@ -39,6 +39,9 @@
     }
     &__info {
         margin: 10px 0;
+        padding: 10px 0;
+        border-top: 4px solid var(--darkHoverColor);
+        border-bottom: 4px solid var(--darkHoverColor);
         display: flex;
         justify-content: space-between;
         &-numbers {

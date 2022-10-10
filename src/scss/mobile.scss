@@ -102,8 +102,13 @@
             &-yellow,
             &-red,
             &-green {
-                width: 30px;
-                height: 30px;
+                width: 30px !important;
+                height: 30px !important;
+            }
+        }
+        &-selector {
+            &:nth-child(3) {
+                display: none;
             }
         }
     }

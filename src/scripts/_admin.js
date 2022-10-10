@@ -20,8 +20,8 @@ switchMode.addEventListener('click', function () {
 })
 
 const showPalette = document.querySelector('#showPalette')
+const paletteBody = document.getElementsByClassName('admin__palette')
 showPalette.addEventListener('click', function () {
-    const paletteBody = document.getElementsByClassName('admin__palette')
     if (paletteBody[0].style.display == 'flex') {
         paletteBody[0].style.display = 'none'
     } else {
@@ -53,3 +53,19 @@ greenPalette.addEventListener('click', function () {
     body.classList.remove('yellow')
     localStorage.setItem('palette', 'green')
 })
+if (window.innerWidth >= 650) {
+    const scrollUp = document.querySelector('#scrollUp')
+    window.onscroll = function () {
+        let scrollPosition = window.pageYOffset
+        if (scrollPosition > 300) {
+            scrollUp.style.display = 'inline-block'
+            paletteBody[0].style.right = '150px'
+            scrollUp.addEventListener('click', function () {
+                window.scrollTo({top: 0, behavior: 'smooth'})
+            })
+        } else {
+            scrollUp.style.display = 'none'
+            paletteBody[0].style.right = '110px'
+        }
+    }
+}
