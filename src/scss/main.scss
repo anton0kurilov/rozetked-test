@@ -1,20 +1,23 @@
 :root {
-    --primary-color: #e5c41d;
-    --secondary-color: #d1b218;
-    --bg-color: #f7f7f7;
-    --card-bg-color: #e1e1e1;
-    --txt-color: #1a1a1a;
-    --dark-bg-color: #1a1a1a;
-    --dark-card-bg-color: #010101;
-    --dark-txt-color: #f7f7f7;
-    --hover-color: #555;
-    --dark-hover-color: #d1d1d1;
-    --m-bradius: 8px;
-    --s-bradius: 4px;
-    --l-bradius: 12px;
-    --desktop-body-width: 1200px;
-    --mobile-body-width: 85%;
-    --load-delay: 0.3s;
+    --primaryColor: #e5c41d;
+    --secondaryColor: #d1b218;
+    --bgColor: #f7f7f7;
+    --cardBgColor: #e1e1e1;
+    --textColor: #1a1a1a;
+    --darkBgColor: #1a1a1a;
+    --darkCardBgColor: #0c0c0c;
+    --darkTextColor: #f7f7f7;
+    --hoverColor: #555;
+    --linkColor: #0060a0;
+    --darkLinkColor: #98b8c8;
+    --darkHoverColor: #d1d1d1;
+    --mediumBorderRadius: 8px;
+    --smallBorderRadius: 4px;
+    --largeBorderRadius: 12px;
+    --desktopBodyWidth: 1200px;
+    --mobileBodyWidth: 85%;
+    --phoneBodyWidth: calc(100% - 20px);
+    --loadingDelay: 0.3s;
 }
 
 *,
@@ -27,20 +30,51 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
-    background-color: var(--bg-color);
+    background-color: var(--bgColor);
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
         Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
-    color: var(--txt-color);
+    color: var(--textColor);
     overscroll-behavior: none;
+    scroll-behavior: smooth;
 }
 
 body.dark {
-    background-color: var(--dark-bg-color);
+    background-color: var(--darkBgColor);
+    .article {
+        &__body {
+            background-color: var(--darkCardBgColor);
+            border-color: #000;
+            color: var(--darkTextColor);
+        }
+        &-text {
+            a {
+                color: var(--darkLinkColor);
+            }
+        }
+        &__info {
+            border-color: #000;
+            &-tags {
+                &-item {
+                    background-color: var(--darkBgColor);
+                }
+            }
+        }
+    }
+}
+
+body.red {
+    --primaryColor: #ff6565;
+    --secondaryColor: #ff3232;
+}
+
+body.green {
+    --primaryColor: #7dda9a;
+    --secondaryColor: #55cf7b;
 }
 
 .container {
-    width: var(--desktop-body-width);
+    width: var(--desktopBodyWidth);
     margin: 0 auto;
 }
 

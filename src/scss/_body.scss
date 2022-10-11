@@ -1,5 +1,5 @@
 .body {
-    margin: 20px auto;
+    margin: 10px auto 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -7,28 +7,28 @@
 }
 
 .main {
-    width: 70%;
+    width: calc(70% - 20px);
     opacity: 0;
     animation: enter-left ease-in 1;
     animation-fill-mode: forwards;
     animation-duration: 0.5s;
-    animation-delay: var(--load-delay);
+    animation-delay: var(--loadingDelay);
     &__article {
         margin-bottom: 8px;
-        border-radius: var(--s-bradius);
+        border-radius: var(--smallBorderRadius);
         position: relative;
         &-title {
             transition: all 0.5s;
             position: absolute;
             bottom: 30px;
             margin: 0 30px;
-            color: var(--dark-txt-color);
+            color: var(--darkTextColor);
         }
         &-img {
             width: 100%;
             height: 320px;
             object-fit: cover;
-            border-radius: var(--s-bradius);
+            border-radius: var(--smallBorderRadius);
             transition: all 0.5s;
             filter: brightness(0.6);
             &:hover {
@@ -39,9 +39,9 @@
     &__ticker {
         padding: 13px;
         margin-bottom: 10px;
-        background-color: var(--primary-color);
-        border-bottom: 5px solid var(--secondary-color);
-        border-radius: var(--s-bradius);
+        background-color: var(--primaryColor);
+        border-bottom: 5px solid var(--secondaryColor);
+        border-radius: var(--smallBorderRadius);
         overflow: hidden;
         &-list {
             display: flex;
@@ -55,7 +55,7 @@
             display: inline-block;
             transition: all 0.5s;
             &:hover {
-                color: var(--hover-color);
+                color: var(--hoverColor);
             }
             &:after {
                 content: '•';
@@ -72,14 +72,14 @@
     animation: enter-right ease-in 1;
     animation-fill-mode: forwards;
     animation-duration: 0.5s;
-    animation-delay: var(--load-delay);
+    animation-delay: var(--loadingDelay);
     transition: right 1s;
     &__card {
         padding: 10px;
         margin-bottom: 10px;
-        background-color: var(--primary-color);
-        border-bottom: 5px solid var(--secondary-color);
-        border-radius: var(--s-bradius);
+        background-color: var(--primaryColor);
+        border-bottom: 5px solid var(--secondaryColor);
+        border-radius: var(--smallBorderRadius);
         &-header {
             font-family: 'Roboto Mono', monospace;
             font-weight: 600;
@@ -95,18 +95,18 @@
             padding: 5px 0;
             width: 100%;
             font-weight: 600;
-            border-bottom: 2px solid var(--txt-color);
+            border-bottom: 2px solid var(--textColor);
             &::placeholder {
-                color: var(--txt-color);
+                color: var(--textColor);
                 font-family: 'Roboto Mono', monospace;
                 font-weight: 600;
             }
             &:focus {
                 outline: none;
-                border-color: var(--hover-color);
-                color: var(--hover-color);
+                border-color: var(--hoverColor);
+                color: var(--hoverColor);
                 &::placeholder {
-                    color: var(--hover-color);
+                    color: var(--hoverColor);
                 }
             }
         }
@@ -115,11 +115,11 @@
             background: transparent;
             position: absolute;
             margin: 2px 0px 0 -25px;
-            font-family: 'Roboto Mono', monospace;
             font-weight: 600;
             transition: all 0.5s;
+            color: var(--textColor);
             &:hover {
-                color: var(--hover-color);
+                color: var(--hoverColor);
                 cursor: pointer;
             }
             & span {
@@ -152,7 +152,7 @@
     font-weight: 600;
     transition: all 0.5s;
     a:hover {
-        color: var(--hover-color);
+        color: var(--hoverColor);
     }
 }
 
@@ -170,23 +170,59 @@
     bottom: 10px;
     right: 10px;
     padding: 10px;
-    background-color: var(--primary-color);
-    border-bottom: 5px solid var(--secondary-color);
-    border-radius: var(--s-bradius);
+    background-color: var(--primaryColor);
+    border-bottom: 5px solid var(--secondaryColor);
+    border-radius: var(--smallBorderRadius);
     opacity: 0.8;
     font-size: 20px;
     opacity: 0;
     animation: enter-right ease-in 1;
     animation-fill-mode: forwards;
     animation-duration: 0.5s;
-    animation-delay: var(--load-delay);
+    animation-delay: var(--loadingDelay);
+    z-index: 998;
     &-selector {
         transition: all 0.5s;
         padding: 5px;
         cursor: pointer;
         &:hover {
-            background-color: var(--secondary-color);
-            border-radius: var(--s-bradius);
+            background-color: var(--secondaryColor);
+            border-radius: var(--smallBorderRadius);
+        }
+    }
+    &__palette {
+        position: fixed;
+        bottom: 10px;
+        right: 110px;
+        padding: 10px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: var(--primaryColor);
+        border-bottom: 5px solid var(--secondaryColor);
+        border-radius: var(--smallBorderRadius);
+        .admin__palette-yellow,
+        .admin__palette-red,
+        .admin__palette-green {
+            width: 34px;
+            height: 34px;
+            border-radius: var(--smallBorderRadius);
+            border: 2px solid white;
+            cursor: pointer;
+            transition: all 0.5s;
+            &:hover {
+                filter: brightness(0.9);
+            }
+        }
+        &-yellow {
+            background-color: #e5c41d;
+        }
+        &-red {
+            background-color: #ff6565;
+        }
+        &-green {
+            background-color: #7dda9a;
         }
     }
 }

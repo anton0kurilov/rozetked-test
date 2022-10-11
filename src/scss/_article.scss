@@ -1,0 +1,78 @@
+.article {
+    &__body {
+        padding: 10px 30px;
+        margin: 0 0 10px 0;
+        background-color: var(--cardBgColor);
+        border-bottom: 5px solid var(--darkHoverColor);
+        border-radius: var(--smallBorderRadius);
+    }
+    &-img {
+        width: calc(100% + 60px);
+        height: auto;
+        margin: -10px -30px 0 -30px;
+        border-radius: var(--smallBorderRadius) var(--smallBorderRadius) 0 0;
+        filter: brightness(0.6);
+    }
+    &-title {
+        bottom: 30px;
+        font-size: 2em;
+        position: absolute;
+        color: var(--darkTextColor);
+    }
+    &-text {
+        font-size: 18px;
+        line-height: 25px;
+        text-align: justify;
+        p {
+            padding: 10px 0;
+        }
+        a {
+            color: var(--linkColor);
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        img {
+            width: calc(100% + 60px);
+            margin: 10px -30px;
+        }
+    }
+    &__info {
+        margin: 10px 0;
+        padding: 10px 0;
+        border-top: 4px solid var(--darkHoverColor);
+        border-bottom: 4px solid var(--darkHoverColor);
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Roboto Mono', monospace;
+        &-numbers {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            cursor: default;
+        }
+        &-tags {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            &-item {
+                background-color: var(--darkHoverColor);
+                padding: 8px 12px;
+                border-radius: var(--smallBorderRadius);
+                text-transform: uppercase;
+                transition: all 0.5s;
+                &:hover {
+                    background-color: var(--primaryColor);
+                }
+            }
+        }
+        &-icon {
+            font-size: 14px !important;
+            vertical-align: middle;
+            margin: 0 3px 2px 0;
+        }
+    }
+}

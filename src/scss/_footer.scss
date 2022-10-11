@@ -1,13 +1,13 @@
 .footer {
     width: 100%;
     padding: 30px 0;
-    background-color: var(--dark-bg-color);
-    border-bottom: 5px solid var(--dark-card-bg-color);
+    background-color: var(--darkBgColor);
+    border-bottom: 5px solid var(--darkCardBgColor);
     opacity: 0;
     animation: enter-up ease-in 1;
     animation-fill-mode: forwards;
     animation-duration: 0.5s;
-    animation-delay: var(--load-delay);
+    animation-delay: var(--loadingDelay);
     &__logo img {
         height: 35px;
         vertical-align: middle;
@@ -27,9 +27,9 @@
             font-weight: 600;
             font-size: 1.1em;
             transition: all 0.5s;
-            color: var(--dark-txt-color);
+            color: var(--darkTextColor);
             &:hover {
-                color: var(--dark-hover-color);
+                color: var(--darkHoverColor);
             }
         }
     }

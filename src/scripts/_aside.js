@@ -1,12 +1,14 @@
-const asideElement = document.getElementsByClassName('aside');
-const overlayElement = document.getElementById('overlay');
+const asideElement = document.querySelector('.aside')
+const overlayElement = document.querySelector('.overlay')
+const showAside = document.querySelector('#showAside')
+const hideAside = document.querySelector('#hideAside')
 
-function showAside() {
-    asideElement[0].style.right = '0px';
-    overlayElement.style.display = 'block';
-}
+showAside.addEventListener('click', function () {
+    asideElement.style.right = '0px'
+    overlayElement.style.display = 'block'
+})
 
-function hideAside() {
-    asideElement[0].style.right = '-320px';
-    overlayElement.style.display = 'none';
-}
+hideAside.addEventListener('click', function () {
+    asideElement.style.right = '-320px'
+    overlayElement.style.display = 'none'
+})
